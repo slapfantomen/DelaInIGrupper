@@ -72,13 +72,13 @@ namespace DelaInIGrupper
          * innehåller namnen på alla studenter i Hogia Academy.
          */
         private static string[] SelectInput()
-        {
+        {//TODO: Gör så att alla svar utom y och n returnerar felmeddelande
             Console.WriteLine("Load data from file?? (y/n): ");
             string[] names;
             string answer = Console.ReadLine();
-            if (answer == "y")
+            if (answer.ToLower() == "y") //Buggfix: Case-insensitive
             {
-                names = ReadNamesFromFile();
+                names = ReadNamesFromFile(); //TODO: Koppla till ValidateNames för felsökning av indata
 
             }
             else
