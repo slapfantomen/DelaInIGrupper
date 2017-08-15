@@ -246,7 +246,7 @@ namespace DelaInIGrupper
             do
             {
                 Console.Write("Input all names [separate with ,]: ");
-                names = Console.ReadLine().Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries);
+                names = Console.ReadLine().Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries); //TODO: Rätta bugg som gör att man inte kan skriva mellanslag
                 b = ValidateArray(names);
 
             } while (!b);
@@ -261,7 +261,7 @@ namespace DelaInIGrupper
                 log.Error("List empty");
                 PrintRed("List empty");
                 Speak("List empty");
-                result = false;
+                result = false; //alternativt sätt: "return false"
             }
             else
             {
@@ -290,7 +290,7 @@ namespace DelaInIGrupper
             return result;
 
         }
-
+        //TODO: Mer informativa variabelnamn
         private static void PrintRed(string v)
         {
             Console.ForegroundColor = ConsoleColor.Red;
