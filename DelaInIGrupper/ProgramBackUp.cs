@@ -9,6 +9,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using log4net;
 
+//Testkommentar
 
 namespace DelaInIGrupper
 {
@@ -199,6 +200,7 @@ namespace DelaInIGrupper
          */
         private static void Speak(string str)
         {
+            // TODO: Använd en häftigare röst!!
             SpeechSynthesizer synth = new SpeechSynthesizer();
             synth.Speak(str);
         }
