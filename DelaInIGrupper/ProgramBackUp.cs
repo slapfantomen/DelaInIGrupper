@@ -17,6 +17,7 @@ namespace DelaInIGrupper
         private static readonly log4net.ILog log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
         static void Main(string[] args)
         {
+            //Add comment here
             log.Info("Program start");
             // Skrivs ut när programmet startas:
             PrintWhite("*** Create groups ***".ToUpper());
