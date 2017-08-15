@@ -9,6 +9,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using log4net;
 
+//Testkommentar
 
 namespace DelaInIGrupper
 {
